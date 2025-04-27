@@ -12,11 +12,54 @@ To write a C program to find and display the priority of the operator in the giv
 
 ## Program:
 ```
-/*
 Program to find and display the priority of the operator in the given Postfix expression
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: {Priyanka K
+RegisterNumber:  212223230162
+
+#include <stdio.h>
+#include<string.h>
+
+   
+int main()
+{
+   int i,j;
+   char ch[100]="+7*45%20";
+   
+   for(i=0;i<strlen(ch);i++)
+   {
+   if(ch[i]=='+'||
+   ch[i]=='-'||
+   ch[i]=='*'||
+   ch[i]=='/'||
+   ch[i]=='%'||
+   ch[i]=='^'||
+   ch[i]=='&'||
+   ch[i]=='|')
+       {
+       j=priority(ch[i]);
+       switch(j)
+       {
+           case 1:
+             printf("%c  ----> ",ch[i]);
+           printf("Lowest Priority\n");
+             break;
+            case 2:
+             printf("%c  ----> ",ch[i]);
+           printf("Second Lowest Priority\n");
+             break;
+            case 3:
+             printf("%c  ----> ",ch[i]);
+           printf("Second Highest Priority\n"); 
+             break;
+            case 4:
+             printf("%c  ----> ",ch[i]);
+           printf("Highest Priority\n");
+             break;
+       }
+       }
+   }
+   
+    return 0;
 ```
 
 ## Output:
