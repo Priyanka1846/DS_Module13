@@ -63,7 +63,7 @@ int main()
 ```
 
 ## Output:
-
+![image](https://github.com/user-attachments/assets/bb7a7414-bc53-44a1-9de8-79b579dd53e3)
 
 
 ## Result:
